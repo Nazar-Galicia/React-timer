@@ -1,0 +1,52 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    overflow: hidden;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+            135deg,
+            #c4b5fd,
+            #8b5cf6,
+            #ddd6fe,
+            #a78bfa,
+            #7c3aed
+    );
+
+    background-size: 300% 300%;
+
+    animation: background-gradient 30s ease-in-out infinite;
+}
+
+@keyframes background-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 100% 40%;
+    }
+
+    50% {
+        background-position: 60% 100%;
+    }
+
+    75% {
+        background-position: 20% 20%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

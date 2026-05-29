@@ -1,0 +1,27 @@
+.timer__unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.timer__value {
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 1;
+
+    color: #1f2937;
+}
+
+.timer__value--milliseconds {
+    font-size: 4.5vw;
+}
+
+.timer__label {
+    font-size: 1vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #9ca3af;
+}

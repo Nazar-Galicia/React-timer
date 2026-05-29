@@ -1,0 +1,112 @@
+.timerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 14vw;
+    padding: 1vw 2vw;
+
+    border: none;
+    border-radius: 999px;
+
+    font-size: 2vw;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+.start {
+    color: #ffffff;
+
+    background: linear-gradient(
+            135deg,
+            #8b5cf6 0%,
+            #7c3aed 100%
+    );
+
+    box-shadow:
+            0 10px 25px rgba(124, 58, 237, 0.35);
+}
+
+.pause {
+    color: #ffffff;
+
+    background: linear-gradient(
+            135deg,
+            #c084fc 0%,
+            #a855f7 100%
+    );
+
+    box-shadow:
+            0 10px 25px rgba(168, 85, 247, 0.25);
+}
+
+.reset {
+    color: #ef4444;
+
+    background-color: #d3d3d3;
+
+    box-shadow:
+            0 6px 18px rgba(0, 0, 0, 0.05);
+}
+@media (hover: hover) {
+    .timerButton:hover {
+        transform: translateY(-4px) scale(1.03);
+    }
+
+    .start:hover {
+        box-shadow:
+                0 14px 30px rgba(124, 58, 237, 0.45);
+
+        background: linear-gradient(
+                135deg,
+                #9f67ff 0%,
+                #6d28d9 100%
+        );
+    }
+
+    .pause:hover {
+        box-shadow:
+                0 14px 30px rgba(168, 85, 247, 0.35);
+
+        background: linear-gradient(
+                135deg,
+                #d8a4ff 0%,
+                #9333ea 100%
+        );
+    }
+
+    .reset:hover {
+        background-color: #e5e7eb;
+
+        box-shadow:
+                0 10px 22px rgba(0, 0, 0, 0.08);
+    }
+}
+@media (hover: none) {
+    .timerButton:active {
+        transform: scale(0.96);
+    }
+
+    .start:active {
+        background: linear-gradient(
+                135deg,
+                #9f67ff 0%,
+                #6d28d9 100%
+        );
+    }
+
+    .pause:active {
+        background: linear-gradient(
+                135deg,
+                #d8a4ff 0%,
+                #9333ea 100%
+        );
+    }
+
+    .reset:active {
+        background-color: #e5e7eb;
+    }
+}
